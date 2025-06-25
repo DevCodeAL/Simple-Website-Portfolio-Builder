@@ -574,22 +574,23 @@ const PortfolioBuilder = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <h1 className="text-2xl font-bold text-gray-800">Portfolio Builder</h1>
-            <div className="flex space-x-4">
-              <button
-                onClick={() => setPreviewMode(true)}
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center space-x-2"
-              >
-                <Eye className="w-4 h-4" />
-                <span>Preview</span>
-              </button>
-              <button
-                onClick={downloadPortfolio}
-                className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors flex items-center space-x-2"
-              >
-                <Download className="w-4 h-4" />
-                <span>Download</span>
-              </button>
-            </div>
+            <div className="flex flex-col justify-end sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0 w-full">
+            <button
+              onClick={() => setPreviewMode(true)}
+              className="bg-blue-600 text-white w-full sm:w-auto px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2"
+            >
+              <Eye className="w-4 h-4" />
+              <span>Preview</span>
+            </button>
+
+            <button
+              onClick={downloadPortfolio}
+              className="bg-green-600 text-white w-full sm:w-auto px-6 py-2 rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center space-x-2"
+            >
+              <Download className="w-4 h-4" />
+              <span>Download</span>
+            </button>
+          </div>
           </div>
         </div>
       </div>
